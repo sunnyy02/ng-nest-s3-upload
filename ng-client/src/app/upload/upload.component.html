@@ -1,0 +1,11 @@
+<div>
+  <span class="alert">{{ errorMessage }}</span>
+  <span class="success">{{ successMessage }}</span>
+  <input #fileInput type="file" class="file-input" [accept]="acceptedFileExtensions" (change)="attachFile($event)" />
+  <div class="row document-type">
+    <div class="col-xs-12">
+      <button class="fileButton" action="file" (click)="onSelectFile()" type="submit">Upload document</button>
+      allowed file types(JPG, PNG, GIF)
+    </div>
+  </div>
+</div>
